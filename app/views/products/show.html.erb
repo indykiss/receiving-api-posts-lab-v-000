@@ -13,9 +13,6 @@ $(function () {
     var values = $(this).serialize();
     var posting = $.post('/products', values);
 
-
-  });
-
      posting.done(function(data) {
        var product = data;
        $(".productName").text(product["name"]);
@@ -26,5 +23,5 @@ $(function () {
        $(".js-next").attr("data-id", product["id"]);
      });
     });
-
+  });
 </script>
