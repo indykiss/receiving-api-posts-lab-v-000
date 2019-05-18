@@ -11,7 +11,7 @@ $(function () {
     event.preventDefault();
 
     var values = $(this).serialize();
-
+    var posting = $.post('/posts', values);
 
 
   });
